@@ -1,0 +1,73 @@
+.about-us-section{
+
+}
+.section {
+  padding: 50px 0;
+
+}
+
+.section-1 {
+  background-color: #ccc;
+
+}
+
+.section-2 {
+  background-color: #ddd;
+ 
+}
+
+.section-3{
+  background-color: #666;
+
+}
+
+.dots-block{
+    position: fixed;
+    right: 15px;
+    top: 200px;
+    padding: 5px;
+    }
+    .dots-block ul{
+    list-style: none;
+    padding: 0px;
+    }
+    .dots-block ul li{
+     position: relative;
+    }
+    .dots-block ul li span{
+    margin-bottom: 7px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #d0cbcb;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    padding: 4px 0;
+    opacity: 0.4;
+    }
+    .dots-block ul li.active span{
+     background: #000;
+    }
+    .dots-block ul li .tooltip{
+     background: #000 !important;
+     color: #fff;
+     padding: 2px 10px;
+     text-align: center;
+     border-radius: 5px;
+     position: absolute;
+     left: auto;
+     right: 30px;
+     min-width: 150px;
+     width: auto;
+     top: 0;
+     display: none;
+     white-space: nowrap;
+     line-height: 20px;
+     opacity: 0;
+     transition: all ease 3s;
+    }
+    .dots-block ul li:hover .tooltip{
+          display: block;
+          opacity: 1;
+    }
