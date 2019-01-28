@@ -1,0 +1,28 @@
+.input-range {
+  
+  width: 181px;
+  color: black;
+ 
+  
+  
+  
+}
+.input-range__label{
+  font-size: 14px;
+  
+  
+}
+/* .form {
+   
+  
+    font-size: -20px;
+    margin: 45px;
+  } */
+  .price{
+      
+      color:black;
+      font-weight: 600;
+      font-size: 15px;
+      font-family: 'Montserrat', sans-serif;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Montserrat');
