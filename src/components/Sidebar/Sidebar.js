@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import Accordian from '../../Containers/Accordian';
+import Accordian from '../../containers/Accordian';
 import './SideBar.css'
-import Rangeslider from '../../Containers/RangeSlider';
+import Rangeslider from '../../containers/RangeSlider';
 import CheckBox from './CheckBox';
-import Autosuggestion from '../../Containers/Autosuggest';
+import Autosuggestion from '../../containers/Autosuggest';
 import Header from '../Header';
 import Footer from '../Footer';
 import ProductData from './../ProductData'
@@ -31,10 +31,11 @@ class SideBar extends Component {
     componentDidUpdate(prevProps) {
         const parsed = qs.parse(this.props.location.search);
         const data = ProductData.filter(ProductData => ProductData.price < parseInt(parsed.max) && ProductData.price > parseInt(parsed.min));
-        if(prevProps !== this.props){
-        this.setState({
-            productData: data
-        })}
+        if (prevProps !== this.props) {
+            this.setState({
+                productData: data
+            })
+        }
         console.log(data);
     }
     render() {
@@ -52,7 +53,6 @@ class SideBar extends Component {
         return (
             <>
                 <div className={"container"}>
-                    <Header />
                     <div className={"wrapper"}>
                         <div className={"row"}>
                             <div className={"col-md-3 Sidebar"}>
@@ -78,7 +78,7 @@ class SideBar extends Component {
                         </div>
                     </div>
                 </div>
-                <Footer />
+
             </>
         )
     }
