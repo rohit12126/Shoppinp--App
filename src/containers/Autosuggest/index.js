@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import Autosuggest from 'react-autosuggest';
-import ProductData from './../../component/ProductData'
+import ProductData from './../../components/ProductData'
 import './Autosuggest.css'
 const languages = [
     {

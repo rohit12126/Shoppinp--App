@@ -138,6 +138,7 @@ class AboutView extends Component {
 
 	componentWillUnmount() {
 		window.removeEventListener('mousewheel', this.Handlemousewheel);
+		document.body.style.overflow = 'auto'
 	}
 
 	render(){

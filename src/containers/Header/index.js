@@ -31,6 +31,11 @@ class Header extends Component {
               Home
               </NavLink>
             </NavItem>
+            <NavItem eventKey={1}>
+            <NavLink to='/about' activeClassName="active">
+              About
+            </NavLink>
+            </NavItem>
             <NavItem eventKey={2} href="#">
               <NavDropdown eventKey={3} title="Products" id="basic-nav-dropdown" className="mega-dropdown-menu" >
                 <div className="mega-menu container">

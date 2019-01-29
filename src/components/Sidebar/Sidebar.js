@@ -31,10 +31,11 @@ class SideBar extends Component {
     componentDidUpdate(prevProps) {
         const parsed = qs.parse(this.props.location.search);
         const data = ProductData.filter(ProductData => ProductData.price < parseInt(parsed.max) && ProductData.price > parseInt(parsed.min));
-        if(prevProps !== this.props){
-        this.setState({
-            productData: data
-        })}
+        if (prevProps !== this.props) {
+            this.setState({
+                productData: data
+            })
+        }
         console.log(data);
     }
     render() {
@@ -52,10 +53,10 @@ class SideBar extends Component {
         return (
             <>
                 <div className={"container"}>
-                    <Header />
                     <div className={"wrapper"}>
                         <div className={"row"}>
-                            <div className={"col-md-3 Sidebar"}>
+                            <div className={"col-md-3"}>
+                              <div className="Sidebar">
                                 <div>
                                     <Accordian />
                                 </div>
@@ -66,7 +67,7 @@ class SideBar extends Component {
                                 <div>
                                     <CheckBox />
                                 </div>
-
+                              </div>
                             </div>
                             <div className={"col-md-9"}>
 
@@ -78,7 +79,7 @@ class SideBar extends Component {
                         </div>
                     </div>
                 </div>
-                <Footer />
+
             </>
         )
     }
