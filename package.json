@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "query-string": "^6.2.0",
     "react": "^16.7.0",
     "react-bootstrap": "^0.32.4",
     "react-cursor-zoom": "^1.2.2",

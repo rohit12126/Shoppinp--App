@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.menu-content{
+    font-size: 10px;
+    padding: 10px 20px;
+    border:none
+    /* background: #d4d4d454; */
+    
+}
+.h5, h5 {
+    font-size: 15px;
+}
+li a .nav-label+span {
+    transition: all 0.5s ease-in-out;
+}
+.fa.pull-right {
+    margin-left: .3em;
+    margin-right:13px;
+}
+.pull-right {
+    float: right;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.nav-label{
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+
+
+}
+
+    .accordian-title:focus {outline:0;}
+
+.js_selectableFeature_2{
+    width: auto !important;
+}
+.selectableFeature ul {
+    display: block;
+    float: left;
+}
+/* .container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+} */
+
+/* Hide the browser's default checkbox */
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 10px;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  margin-top: 6px;
+  left: 16px;
+  height: 12px;
+  width: 12px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+/* .container:hover input ~ .checkmark {
+  background-color: #ccc;
+} */
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+  padding: 9px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.sub-title{
+    font-size:15px;
+    margin-top:-18px;
+    font-family: 'Montserrat', sans-serif;
+
+    
+}
+.accordian-title{
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+   
+    
+}
+.accordion{
+    border: none;
+}
