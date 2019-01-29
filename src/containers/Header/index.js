@@ -111,10 +111,10 @@ class Header extends Component {
                 </div>
               </NavDropdown>
             </NavItem>
-            <NavDropdown eventKey={3} title="Profile" id="basic-nav-dropdown">
-              <MenuItem eventKey={3.1}>View Profile</MenuItem>
-              <MenuItem eventKey={3.2}>Change Password</MenuItem>
-              <MenuItem eventKey={3.2}>Logout</MenuItem>
+            <NavDropdown eventKey={3} title="Tushar" id="basic-nav-dropdown">
+              <MenuItem href="/calendar" eventKey={3.1}>Calendar</MenuItem>
+              <MenuItem href="/range-calendar" eventKey={3.2}>Range Calendar</MenuItem>
+              <MenuItem href="/table" eventKey={3.2}>Table</MenuItem>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
