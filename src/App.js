@@ -6,7 +6,7 @@ import SideBar from './components/Sidebar/Sidebar'
 import Calendar from './containers/calendar';
 import RangeCalendar from './containers/range-calendar';
 import Table from './containers/table';
-// import About from './containers/About'
+import About from './containers/About'
   
 const AppRoute = ({ component: Component, layout: Layout, ...rest }) => (
   <Route {...rest} render={props => (
@@ -24,7 +24,7 @@ class App extends Component {
         <AppRoute exact path="/calendar" layout={FullContainer} component={Calendar} />
         <AppRoute exact path="/range-calendar" layout={FullContainer} component={RangeCalendar} />
         <AppRoute exact path="/table" layout={FullContainer} component={Table} />
-        {/* <AppRoute exact path="/about" layout={FullContainer} component={About} /> */}
+        <AppRoute exact path="/about" layout={FullContainer} component={About} />
       </Switch>
     );
   }

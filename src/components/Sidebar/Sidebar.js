@@ -55,7 +55,8 @@ class SideBar extends Component {
                 <div className={"container"}>
                     <div className={"wrapper"}>
                         <div className={"row"}>
-                            <div className={"col-md-3 Sidebar"}>
+                            <div className={"col-md-3"}>
+                              <div className="Sidebar">
                                 <div>
                                     <Accordian />
                                 </div>
@@ -66,7 +67,7 @@ class SideBar extends Component {
                                 <div>
                                     <CheckBox />
                                 </div>
-
+                              </div>
                             </div>
                             <div className={"col-md-9"}>
 
