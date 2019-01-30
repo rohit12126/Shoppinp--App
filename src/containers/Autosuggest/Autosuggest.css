@@ -32,6 +32,9 @@
     display: none;
     margin: auto;
   }
+  .react-autosuggest__container input{
+    display: block !important;
+  }
   
   .react-autosuggest__suggestions-container--open {
     display: block;

@@ -15,8 +15,6 @@ class  CheckBox extends Component{
         
     }
     handleChange = (index,event)=>{
-    console.log("hjdk")
-    console.log(event)
     let data=this.state.data;
     let value=event.target.value
     let checked=this.state.checked
@@ -34,7 +32,7 @@ class  CheckBox extends Component{
             <div className="">
                 <h5 style={{paddingTop:"30px"}}>Color</h5>
                         { this.state.color.map ((value ,index)=> {
-                           return <label className="container checkbox" key={index}> {value}
+                           return <label className="container " key={index}> {value}
                             <input 
                                 type="checkbox" value={value} 
                                 checked={this.state.checked[index] ? this.state.checked[index]:false}

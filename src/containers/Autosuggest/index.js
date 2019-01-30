@@ -119,9 +119,6 @@ const languages = [
     };
   
     render() {
-      console.log(this.state.value)
-      console.log("this.state.suggestions")
-        
       const { value, suggestions } = this.state;
       const inputProps = {
        placeholder:"Search",
