@@ -55,7 +55,7 @@ class SideBar extends Component {
                 <div className={"container"}>
                     <div className={"wrapper"}>
                         <div className={"row"}>
-                            <div className={"col-md-3"}>
+                            <div className="col-md-3 sidebar-upper">
                               <div className="Sidebar">
                                 <div>
                                     <Accordian />

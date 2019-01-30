@@ -145,7 +145,7 @@ class AboutView extends Component {
 		return (
 
 			<div className="about-us-section"  >
-				<div className="dots-block">
+{/*				<div className="dots-block">
 					<ul>
 						<li className={this.state.activeDot.first ? 'active' :''}>
 							<span onClick={this.HandleClick.bind(this, 1)}></span>
@@ -160,7 +160,7 @@ class AboutView extends Component {
 							<span className="tooltip">Third Section</span>
 						</li>
 					</ul>
-				</div>
+				</div>*/}
 				<div className="section section-1" ref={this.section1} style={{ 'height': this.state.sectionHeight}}>
 				<h1>Section First</h1>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
