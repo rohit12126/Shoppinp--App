@@ -1,7 +1,10 @@
- .dropdown:hover .dropdown-menu {
-  display: block;
-} 
-a{
+  /*.dropdown:hover .dropdown-menu {
+    
+  } */
+  .navbar-nav > li:hover .dropdown-menu {
+    display: block;
+  }
+  a{
     color: #9d9d9d;
     text-decoration: none;
   }
