@@ -28,7 +28,7 @@ class Rangeslider extends React.Component {
   handleChange = (value) => {
     this.setState({ value })
     console.log(this.props)
-    this.props.history.push(`/home?max=${value.max}&min=${value.min}`)
+    this.props.history.push(`/product?max=${value.max}&min=${value.min}`)
   }
   render() {
     console.log(this.state.value)

@@ -9,7 +9,7 @@
 }
 .input-range__label{
   font-size: 14px;
-  
+  padding-left: 23px;
   
 }
 /* .form {
@@ -24,5 +24,6 @@
       font-weight: 600;
       font-size: 15px;
       font-family: 'Montserrat', sans-serif;
+      margin-bottom: 30px;
   }
   @import url('https://fonts.googleapis.com/css?family=Montserrat');
