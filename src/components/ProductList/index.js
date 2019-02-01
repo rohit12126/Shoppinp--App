@@ -19,8 +19,10 @@ const Productlist =(props)=>{
            <div className="box thumbnailurl"> 
                 <a href="javascript:void(0)" className="d-block mb-4 h-100" onClick={props.handleClick} ref={props.myRef}>
                     <img className="img-fluid img-thumbnail" src={Constant.img_url+image[0]} alt={props.product.name}  />
+                    <div className="title-name">
                     <MappleToolTip float={true} direction={'bottom'} mappleType={'success'} shadow={true} fadeInAnimation={true}>
                     <h4>{props.product.name}{" "}({image.length})</h4><div>{props.product.name}{" "}({image.length})</div></MappleToolTip>
+                    </div>
                 </a>
             </div>
                 <div className="main-silder">

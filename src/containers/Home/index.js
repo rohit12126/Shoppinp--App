@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Productlist from '../../components/ProductList'
 import './home.css';
+import Loader from './Loader';
 import Constant from '../../Config'; 
 class Home extends Component {
     constructor(props) {
@@ -13,6 +14,7 @@ class Home extends Component {
             viewImage:'',
             intervalId: 0,
             scrollStepInPx:50,
+            pageloaderImage:'display_block',
             delayInMs:16.66,
         }
         this.divRef = React.createRef();
@@ -20,7 +22,6 @@ class Home extends Component {
         this.myRef = React.createRef();
     }
     scrollStep() {
-        console.log('ddssd');
         console.log(window.pageYOffset+'   '+this.state.scrollStepInPx);
         if (window.pageYOffset === 0) {
             clearInterval(this.state.intervalId);
@@ -34,14 +35,19 @@ class Home extends Component {
     }
     componentDidMount()
     {
+        this.setState({pageloaderImage:'display_block'});
         axios.get(Constant.backend_api+'/home/?auth=ExpediaFlow')
         .then(response=>(
             this.setState({
                 products:response.data.favorite_incredible_places,
                 viewImage:'',
+                pageloaderImage:'display_none'
             })
         )).catch(error=>(
-            console.log(error)
+            this.setState({
+                
+                pageloaderImage:'display_none'
+            })
         ));
     }
     handleClick=(e,index) =>{
@@ -96,6 +102,7 @@ class Home extends Component {
         );
         return (
             <>
+                <Loader pageloaderImage={this.state.pageloaderImage} />
                 <div className="row text-center text-lg-left pictureView viewchange picflex" >
                     {productlist}
                     
