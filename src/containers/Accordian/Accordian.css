@@ -128,3 +128,15 @@ li a .nav-label+span {
 .accordion{
     border: none;
 }
+.accordion__item {
+    position: relative;
+}
+.accordion__arrow {
+    display: inline-block;
+    width: 24px;
+    height: 12px;
+    position: absolute;
+    top: 26px;
+    right: 15px;
+    margin-top: -6px;
+}

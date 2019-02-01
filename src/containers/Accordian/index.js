@@ -6,6 +6,7 @@ import {
     AccordionItemBody,
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
+import 'react-accessible-accordion/dist/minimal-example.css';
 import './Accordian.css'
 class  Accordian extends React.Component{
     constructor(props){
@@ -13,13 +14,13 @@ class  Accordian extends React.Component{
         this.state={
             status:false,
             color:['Red','Green','Pink','Blue','Yellow'],
-            data:[]
-            
+            data:[],
+            accordion:true
         }
     }
     handleClick = ()=>{
-    
-        this.setState({status: !this.state.status})
+    //    accordion=false
+    this.setState({status:true})
     }
     handleChange = (event)=>{
       let data=this.state.data;
@@ -28,28 +29,22 @@ class  Accordian extends React.Component{
       data.push(value)
       this.setState({data})
     }
-    render(){
-      
-        
+    render(){  
     return(
         <>
-            <Accordion className="">
+            <Accordion>
             <AccordionItem expanded={true}> 
                 <AccordionItemTitle className="accordian-title"> 
-                    <h5 className="nav-label"  onClick={this.handleClick}>Category
-                    {this.state.status ?<span className="fas fa-chevron-up pull-right"></span>
-                                : <span className="fa fa-chevron-down pull-right"></span>
-                                }</h5>
+                    <h5 >Category</h5>
+                    {/* <div className="accordion__arrow" role="presentation" />      */}
                 </AccordionItemTitle>
                 <AccordionItemBody >
-                    <Accordion className="Sub-title"> 
+                    <Accordion> 
                         <AccordionItem  expanded={true}>
-                            <AccordionItemTitle className="accordian-title">
-                            <h5  onClick={this.handleClick} >Men
-                                {this.state.status ?<span className="fas fa-chevron-up pull-right"></span>
-                                : <span className="fa fa-chevron-down pull-right"></span>
-                                }
-                            </h5>
+                            <AccordionItemTitle>
+                            <h5 >Men </h5>
+                            <div className="accordion__arrow" role="presentation" />
+                           
                             </AccordionItemTitle>
                             <AccordionItemBody>
                                 <p className="sub-title">Shirt </p>
@@ -60,13 +55,10 @@ class  Accordian extends React.Component{
                     </Accordion>
                     <Accordion> 
                         <AccordionItem expanded={true}>
-                            <AccordionItemTitle className="accordian-title">
-                            <h5  onClick={this.handleClick}>Women
-                               {this.state.status ?<span className="fa fa-chevron-up pull-right"></span> 
-                               : 
-                                 <span className="fa fa-chevron-down pull-right"></span>
-                                }
-                            </h5>
+                            <AccordionItemTitle>
+                            <h5  >Women</h5>
+                            <div className="accordion__arrow" role="presentation" />
+                            
                             </AccordionItemTitle>
                             <AccordionItemBody>
                                 <p className="sub-title">Shirt</p>
@@ -75,15 +67,12 @@ class  Accordian extends React.Component{
                             </AccordionItemBody>
                         </AccordionItem>
                     </Accordion>
-                    <Accordion> 
+                    <Accordion accordion={true}> 
                         <AccordionItem expanded={true}>
-                            <AccordionItemTitle className="accordian-title">
-                            <h5 onClick={this.handleClick}>Kids 
-                                {this.state.status ?
-                                   <span className="fa fa-chevron-up pull-right"></span> 
-                                : <span className="fa fa-chevron-down pull-right"></span>
-                                }
-                            </h5>
+                            <AccordionItemTitle>
+                            <h5 >Kids  </h5>
+                            <div className="accordion__arrow" role="presentation" />
+                           
                             </AccordionItemTitle>
                             <AccordionItemBody>
                                 <p className="sub-title">Shirt</p>

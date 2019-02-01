@@ -125,7 +125,6 @@ const languages = [
         value,
         onChange: this.onChange
       };
-  
        return (
             <>
                 <Autosuggest 
